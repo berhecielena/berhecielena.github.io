@@ -6,12 +6,22 @@
 body {
   background-color: rgb(41, 19, 64);
 }
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100px;
+}
+
+.logo-image{
+  height:100%;
+}
+
+.footer-icons{
+  width:20px; 
+  height:auto;
 }
 
 .logo {
@@ -21,7 +31,6 @@ header {
   margin: 40px;
   height: 50%;
 }
-
 
 .options {
   margin: 20px;
@@ -36,6 +45,7 @@ a {
   text-decoration: none;
   color: #bf91c1;
 }
+
 a:hover {
   background-color: rgba(99, 45, 156, 0.276);
 }
@@ -51,6 +61,18 @@ a:hover {
   align-items: center;
 }
 
+.header1 {
+  color: #cfaad0;
+}
+
+.header2 {
+  color: #7b42e7;
+}
+
+.paragraph {
+  color: #cfaad0;
+}
+
 .icon {
   display: flex;
   align-items: center;
@@ -59,9 +81,10 @@ a:hover {
   padding: 20px;
   border: 20px;
 }
-.icon-image{
-    max-width: 80%;
-    height:auto;
+
+.icon-image {
+  max-width: 80%;
+  height: auto;
 }
 
 .content {
@@ -73,29 +96,33 @@ a:hover {
   padding: 30px;
   border: 30px;
 }
-.contact-me{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 30px;
-    padding: 30px;
-    border: 30px;
-    
+
+.contact-me {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 30px;
+  padding: 30px;
+  border: 30px;
 }
 
-button{
-   
-    padding: 10px;
-    border: 10px;
-    background-color: #7b42e7;
-    color:rgb(41, 19, 64);
-  border-radius:5%; 
+.contact-me-button {
+  padding: 10px;
+  border: 10px;
+  background-color: #7b42e7;
+  color: rgb(41, 19, 64);
+  border-radius: 5%;
   cursor: pointer;
 }
 
-button:hover {
-    background-color:#6233b8;
-  }
+.mail {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-me-button:hover {
+  background-color: #6233b8;
+}
 
 footer {
   display: flex;
@@ -105,35 +132,114 @@ footer {
   height: 50px;
 }
 
-.cv-page {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(54, 24, 86);
-   
-   
-}
-
-.portrait {
-    display: flex;
-    align-items: flex-end;
-    justify-content:flex-end;
-   
-    /* margin: 20px;
-    padding: 20px;
-    border: 20px; */
- 
-}
-
 .description {
-    font-size: 30px;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start;
-    justify-content: flex-start; */
-    margin: 30px;
-    padding: 30px;
-    border: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting {
+  color: #bf91c1;
+  font-size: 70px;
+}
+
+.download-button {
+  padding: 10px;
+  border: 10px;
+  background-color: rgb(64, 30, 100);
+  color: #8e6590;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: rgb(79, 42, 120);
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #bf91c1;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  font-size: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  color: #bf91c1;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  font-size: 20px;
+}
+
+.soft {
+  color: #bf91c1;
+  font-size: 20px;
+}
+
+.hard {
+  color: #bf91c1;
+  font-size: 20px;
+}
+
+.both-skills {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.all-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.first-project {
+  background-color: rgb(50, 22, 79);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  border-radius: 30px;
 }
