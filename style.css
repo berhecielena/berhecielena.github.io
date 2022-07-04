@@ -5,6 +5,8 @@
 
 body {
   background-color: rgb(41, 19, 64);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -13,18 +15,18 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  margin:10px;
+  padding:10px;
+  border:10px;
 }
+
 @media (max-width: 600px) {
   header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: auto;
+    flex-direction: column;
     width:auto;
-    
+    height:auto;
   }
-}
+} 
 
 @media (max-width: 600px) {
   .logo-image {
@@ -33,6 +35,8 @@ header {
     
   }
 }
+
+
 .logo-image{
   height:100%;
 }
@@ -51,8 +55,17 @@ header {
 }
 
 .options {
-  margin: 20px;
-  padding: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 a {
@@ -61,7 +74,8 @@ a {
   margin: 15px;
   padding: 15px;
   text-decoration: none;
-  color: #bf91c1;
+  color:#bf91c1;
+  
 }
 
 a:hover {
@@ -71,11 +85,16 @@ a:hover {
 .active {
   border-bottom: 2px solid #bf91c1;
 }
+
 @media (max-width: 600px) {
-  .active {
-    border-bottom: 0px;
-  
+  .paragraph, .header1, .header2 {
+    text-align: center;
   }
+  .content{
+    align-items: center;
+    
+  }
+
 }
 
 .main-box {
@@ -83,6 +102,9 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin:10px;
+  padding:10px;
+  border:10px;
 }
 
 .header1 {
@@ -95,6 +117,7 @@ a:hover {
 
 .paragraph {
   color: #cfaad0;
+  
 }
 
 .icon {
@@ -114,38 +137,38 @@ a:hover {
 .content {
   font-size: 30px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
-  padding: 30px;
-  border: 30px;
-}
-
-.contact-me {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 30px;
-  padding: 30px;
-  border: 30px;
-}
-
-.contact-me-button {
+  text-align: center;
+  margin: 10px;
   padding: 10px;
   border: 10px;
-  background-color: #7b42e7;
-  color: rgb(41, 19, 64);
-  border-radius: 5%;
-  cursor: pointer;
 }
 
-.mail {
-  padding: 0px;
-  margin: 0px;
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-.contact-me-button:hover {
-  background-color: #6233b8;
+.button {
+  background: none;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: "Muli";
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 50px;
 }
 
 footer {
@@ -154,6 +177,12 @@ footer {
   justify-content: flex-end;
   align-items: center;
   height: 50px;
+}
+
+@media (max-width: 600px) { 
+  footer{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -181,8 +210,9 @@ footer {
 }
 
 .greeting {
+  text-align: center;
   color: #bf91c1;
-  font-size: 70px;
+  font-size: 30px;
 }
 
 .download-button {
@@ -199,16 +229,13 @@ footer {
 }
 
 .box-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  color: #bf91c1;
+  font-size: 20px;
+  text-align: center;
 }
 
 .about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   color: #bf91c1;
   margin: 10px;
   padding: 10px;
@@ -229,16 +256,19 @@ footer {
 .soft {
   color: #bf91c1;
   font-size: 20px;
+  text-align: center;
+  margin:10px;
+  padding:10px;
+  border:10px;
 }
 
 .hard {
   color: #bf91c1;
   font-size: 20px;
-}
-
-.both-skills {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin:10px;
+  padding:10px;
+  border:10px;
 }
 
 ul {
@@ -264,8 +294,8 @@ li {
   }
 }
 
-@media (max-width: 600px) {
-  .box-1 {
+@media (max-width: 1500px) {
+  .box-1, .soft , .hard{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,3 +329,53 @@ li {
   border: 10px;
   border-radius: 30px;
 }
+@media (max-width: 600px) {
+  .all-projects {
+    
+  grid-template-columns: repeat(1, 1fr);
+ 
+
+  }
+}
+
+/* .nav{
+  padding: 30px 70px 30px 40px;
+  position:absolute;
+  top:50%;
+  left:16%;
+  background-color:#bf91c1 ;
+  transform: translate(-80%, -30%);
+  box-shadow:4px 5px 20px rgba(0,0,0,0.2) ;
+}
+
+.nav .heading h5{
+  font-size:20px;
+  color:#efdbf0;
+}
+
+.list{
+  margin-bottom: 40px;
+  margin-top:70px;
+  display:flex;
+  flex-direction:column;
+}
+
+.list a{
+  text-decoration: none;
+  color:white;
+  font-size:0.8em;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.bottom{
+  width:70px;
+  font-size:0.7em;
+  color:white;
+}
+
+.content{
+  width:60%;
+  margin:auto;
+} */
+
