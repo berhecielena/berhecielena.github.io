@@ -9,14 +9,13 @@ body {
 }
 
 header {
+  background-color: rgb(41, 19, 64);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   margin: 10px;
-  padding: 10px;
-  border: 10px;
 }
 
 @media (max-width: 600px) {
@@ -27,15 +26,9 @@ header {
   }
 }
 
-@media (max-width: 600px) {
-  .logo-image {
-    height: 50px;
-    width: 50px;
-  }
-}
-
 .logo-image {
-  height: 100%;
+  width: 30%;
+  height: auto;
 }
 
 .footer-icons {
@@ -47,8 +40,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px;
-  height: 50%;
 }
 
 .options {
@@ -134,9 +125,9 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 30px;
-  padding: 30px;
-  border: 30px;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
 }
 
 canvas {
@@ -150,7 +141,7 @@ canvas {
 .button {
   background: none;
   padding: 20px;
-  border-radius: 50px;
+  border-radius: 30px;
   position: relative;
   margin-top: 5px;
   display: inline-block;
@@ -160,7 +151,6 @@ canvas {
   z-index: 2;
   font-weight: 100;
   font-size: 30px;
-  letter-spacing: 1px;
   margin: 50px;
 }
 
@@ -218,7 +208,7 @@ footer {
   border: 10px;
   background-color: rgb(64, 30, 100);
   color: #bf91c1;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
@@ -237,9 +227,15 @@ footer {
 }
 
 .profile {
-  width: 35%;
+  width: 20%;
   height: auto;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    width: 50%;
+  }
 }
 
 .profile-picture {
@@ -269,7 +265,7 @@ footer {
   padding: 10px;
   font-size: 20px;
   background-color: rgb(50, 22, 79);
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .center {
@@ -349,6 +345,7 @@ li {
 .image {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .project {
