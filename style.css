@@ -6,7 +6,6 @@
 body {
   background-color: rgb(41, 19, 64);
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 header {
@@ -188,11 +187,17 @@ footer {
   }
 }
 
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .message {
@@ -212,9 +217,19 @@ footer {
   padding: 10px;
   border: 10px;
   background-color: rgb(64, 30, 100);
-  color: #8e6590;
-  border-radius: 5%;
+  color: #bf91c1;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.cv-button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
 }
 
 .download-button:hover {
@@ -222,9 +237,18 @@ footer {
 }
 
 .profile {
-  max-width: 20%;
+  width: 35%;
   height: auto;
   border-radius: 50%;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
 }
 
 .box-1 {
@@ -234,12 +258,24 @@ footer {
 }
 
 .about-me {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #bf91c1;
+  max-width: 80%;
+  height: auto;
   margin: 10px;
   padding: 10px;
-  border: 10px;
   font-size: 20px;
+  background-color: rgb(50, 22, 79);
+  border-radius: 50px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info {
